@@ -4,7 +4,12 @@
 <p>offset {{offset}}</p>
 <p>MyDate shortDate offset {{myDate | date: 'shortDate' : 'offset'}}</p>
 <p>MyDate shortDate {{myDate | date: 'shortDate'}}</p>
-<p>MyDate with timezone UTC-4 {{myDate | date: 'shortDate' : 'UTC-4'}}</p>
+<p>MyDate shortDate with timezone UTC-4 {{myDate | date: 'shortDate' : 'UTC-4'}}</p>
+<p>----</p>
+<p>{{dbDate}}</p>
+<p>dbDate shortDate offset {{dbDate | date: 'shortDate' : 'offset'}}</p>
+<p>dbDate shortDate {{dbDate | date: 'shortDate'}}</p>
+<p>dbDate shortDate with timezone UTC-4 {{dbDate | date: 'shortDate' : 'UTC-4'}}</p>
 
 
 

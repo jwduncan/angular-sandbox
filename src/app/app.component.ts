@@ -9,6 +9,8 @@ import { NgForm } from '@angular/forms';
 export class AppComponent implements OnInit {
 myDate = new Date();
 offset: number = 0;
+dbDate: Date =  new Date();
+
 
 
   // categories: {_id: string, name: string}[] = [];
@@ -22,6 +24,7 @@ offset: number = 0;
   ngOnInit(): void {
     // this.loadCategories();
     this.offset = new Date().getTimezoneOffset();
+    this.dbDate.setHours(0,0,0,0);
 
   }
 
